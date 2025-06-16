@@ -45,9 +45,21 @@
   </style>
 </head>
 <body>
-<audio id="bgm" autoplay loop>
+<audio id="bgm" autoplay loop muted>
   <source src="https://guan-wei-lin.github.io/tomybestfriendmariochen/夏末的歌.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  const bgm = document.getElementById("bgm");
+  bgm.volume = 0.3;
+
+  // 點擊頁面任意地方解除靜音播放
+  window.addEventListener('click', () => {
+    bgm.muted = false;
+    bgm.play();
+  });
+</script>
+
 
 
 
