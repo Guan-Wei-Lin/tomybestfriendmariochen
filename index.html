@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>獻給我最好的朋友</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f3e5ab, #f3e5ab);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 30px;
+      color: #333;
+      font-size: 48px;
+    }
+    p {
+      color: #555;
+      font-size: 20px;
+      margin: 20px;
+    }
+    .photo {
+      width: 300px;
+      border-radius: 15px;
+      margin: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .video {
+      width: 80%;
+      max-width: 700px;
+      margin: 30px auto;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #ffb5a7;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 20px;
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+<audio id="bgm" autoplay loop>
+  <source src="https://github.com/Guan-Wei-Lin/tomybestfriendmariochen/raw/refs/heads/main/%E5%A4%8F%E6%9C%AB%E7%9A%84%E6%AD%8C.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.getElementById("bgm").volume = 0.3;
+</script>
+
+
+  <h1>獻給我最好的朋友</h1>
+  <p>謝謝你一直陪在我身邊，無論開心或難過，都是我最重要的朋友！</p>
+
+  <img src="你的照片網址1.jpg" class="photo">
+  <img src="你的照片網址2.jpg" class="photo">
+  <img src="你的照片網址3.jpg" class="photo">
+
+  <div class="video">
+    <video controls width="100%">
+      <source src="你的影片網址.mp4" type="video/mp4">
+      您的瀏覽器不支援影片播放。
+    </video>
+  </div>
+
+  <a href="#" class="btn">點這裡看看我們的回憶</a>
+
+</body>
+</html>
